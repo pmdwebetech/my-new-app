@@ -2,9 +2,10 @@ version: 2
 jobs:
   build_windows:
     docker:
-      - image: electronuserland/builder:wine-mono-05.21
+      - image: stefanscherer/node-windows:latest
     steps:
       - checkout
+      - run: npm install --global yarn
       - run: yarn && yarn run publish
       - store_artifacts:
           path: /root/project/out

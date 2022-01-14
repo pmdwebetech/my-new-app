@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: yarn && yarn run package
       - store_artifacts:
-          path: /out
+          path: /root/project/out
 
 workflows:
   version: 2

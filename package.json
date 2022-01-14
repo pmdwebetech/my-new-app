@@ -26,12 +26,6 @@
           "config": {
             "name": "my_new_app"
           }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
         }
       ],
       "plugins": [

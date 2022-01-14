@@ -5,7 +5,7 @@ jobs:
       - image: electronuserland/builder:wine
     steps:
       - checkout
-      - run: yarn && yarn run make
+      - run: yarn && yarn run package --win
       - store_artifacts:
           path: /root/project/out
 

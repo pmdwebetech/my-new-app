@@ -2,7 +2,7 @@ version: 2
 jobs:
   build_windows:
     docker:
-      - image: electronuserland/builder:wine
+      - image: electronuserland/builder:wine-mono
     steps:
       - checkout
       - run: yarn && yarn run publish
